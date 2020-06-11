@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>SSL &#8211; Hash Hackers</title>
+	<atom:link href="https://static.hashhackers.com/posts/tag/ssl/feed/" rel="self" type="application/rss+xml" />
+	<link>https://static.hashhackers.com/</link>
+	<description>Unique Tutorials and Informational Blog</description>
+	<lastBuildDate>Sat, 01 Jun 2019 12:21:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074601/cropped-pbg_corporation_owner_profile-32x32.png</url>
+	<title>SSL &#8211; Hash Hackers</title>
+	<link>https://static.hashhackers.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">150230344</site>	<item>
+		<title>How To Get A Free Wildcard SSL Certificate From Lets Encrypt</title>
+		<link>https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/</link>
+					<comments>https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Sat, 01 Jun 2019 12:21:30 +0000</pubDate>
+				<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[SSL]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=131</guid>
+
+					<description><![CDATA[<p>One of my favorite services is Let’s Encrypt. They issue free SSL certificates. I have written about how to generate a certificate for a Web Service using their service. They have just started issuing wildcard certificates, and in this blog post I will show you how to make one for an Azure App Service Environment [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/">How To Get A Free Wildcard SSL Certificate From Lets Encrypt</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>One of my favorite services is Let’s Encrypt. They issue free SSL certificates. I have written about how to generate a certificate for a Web Service using their service. They have just started issuing wildcard certificates, and in this blog post I will show you how to make one for an Azure App Service Environment (ASE).</p>
+<h3 id="what-is-a-wild-card-ssl-certificate">What is a Wild Card SSL Certificate?</h3>
+<p>In computer networking, a <strong>wildcard certificate</strong> is a public key certificate which can be used with multiple subdomains of a domain. In easy words, it secures every sub-domain of your domain eg. a wildcard will secure anyname.domain.org documents.domain.org <a href="http://www.domain.org" rel="nofollow">http://www.domain.org</a> as well as domain.org.</p>
+<h4 id="requirements">Requirements</h4>
+<ul>
+<li>You need a Domain Name to Get a Certificate, Lets Encrypt Certificates are not for IP Addresses.</li>
+<li>Need to access DNS Panel of your Domain.</li>
+<li>Just a little bit of time.</li>
+</ul>
+<h4 id="getting-started">Getting Started</h4>
+<p><code>Note: If you are a developer and want to issue a Wildcard Certificate using command lines visit Documentation of Let’s Encrypt.</code></p>
+<ul>
+<li>Open SSL For Free.</li>
+<li>Creating a Account is Recommend. (Easy Renewals)</li>
+<li>In the blank option enter your domain name like this:
+<pre><code>*.hashhackers.com hashhackers.com www.hashhackers.com
+</code></pre>
+</li>
+</ul>
+<p>Correction <code>Please enter three varients to avoid problems in future as given above.</code></p>
+<p><img data-attachment-id="133" data-permalink="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/getting-started/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started.png" data-orig-size="1060,312" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="getting-started" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-300x88.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-1024x301.png" class="aligncenter size-full wp-image-133" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started.png" alt="" width="1060" height="312" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started.png 1060w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-600x177.png 600w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-300x88.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-768x226.png 768w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-1024x301.png 1024w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074752/getting-started-696x205.png 696w" sizes="(max-width: 1060px) 100vw, 1060px" /></p>
+<ul>
+<li>Click on Create Free SSL Certificate.</li>
+<li>Click on Manually Verify Domain.</li>
+<li>It will require you to add a DNS TXT record. It’s Easy.</li>
+</ul>
+<p><a href="https://static.hashhackers.com/posts/learn-make-disposable-emails-website/" rel="nofollow">https://static.hashhackers.com/posts/learn-make-disposable-emails-website/</a></p>
+<p>I have hosted my DNS on Cloudflare so opening Cloudflare DNS option.</p>
+<ul>
+<li>Add DNS Record as follows: in host enter _acme-challenge.</li>
+</ul>
+<p><img data-attachment-id="134" data-permalink="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/adding-txt-record-dns/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns.png" data-orig-size="972,56" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="adding-txt-record-dns" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns-300x17.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns.png" class="aligncenter size-full wp-image-134" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns.png" alt="" width="972" height="56" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns.png 972w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns-600x35.png 600w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns-300x17.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns-768x44.png 768w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns-970x56.png 970w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074745/adding-txt-record-dns-696x40.png 696w" sizes="(max-width: 972px) 100vw, 972px" /></p>
+<ul>
+<li>Enter Value from the SSL For Free Website and Save the record.</li>
+<li>Verify the record by clicking on Verify option.</li>
+</ul>
+<p><img data-attachment-id="135" data-permalink="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/verify-dns/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns.png" data-orig-size="1011,357" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="verify-dns" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns-300x106.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns.png" class="aligncenter size-full wp-image-135" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns.png" alt="" width="1011" height="357" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns.png 1011w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns-600x212.png 600w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns-300x106.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns-768x271.png 768w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074733/verify-dns-696x246.png 696w" sizes="(max-width: 1011px) 100vw, 1011px" /></p>
+<p>See This</p>
+<p><img data-attachment-id="137" data-permalink="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/dns-record-found/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found.png" data-orig-size="658,172" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dns-record-found" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found-300x78.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found.png" class="aligncenter size-full wp-image-137" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found.png" alt="" width="658" height="172" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found.png 658w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found-600x157.png 600w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074718/dns-record-found-300x78.png 300w" sizes="(max-width: 658px) 100vw, 658px" /></p>
+<ul>
+<li>If matches then Click on Download SSL Certificate.</li>
+</ul>
+<p><img data-attachment-id="136" data-permalink="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/generating-ssl/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl.png" data-orig-size="723,236" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="generating-ssl" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl-300x98.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl.png" class="aligncenter size-full wp-image-136" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl.png" alt="" width="723" height="236" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl.png 723w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl-600x196.png 600w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl-300x98.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074724/generating-ssl-696x227.png 696w" sizes="(max-width: 723px) 100vw, 723px" /></p>
+<ul>
+<li>Download SSL Files or Just Copy them to use where your domain is hosted.</li>
+</ul>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/">How To Get A Free Wildcard SSL Certificate From Lets Encrypt</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/get-free-wildcard-ssl-certificate-lets-encrypt/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">131</post-id>	</item>
+	</channel>
+</rss>
