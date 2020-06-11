@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>DKIM &#8211; Hash Hackers</title>
+	<atom:link href="https://static.hashhackers.com/posts/tag/dkim/feed/" rel="self" type="application/rss+xml" />
+	<link>https://static.hashhackers.com/</link>
+	<description>Unique Tutorials and Informational Blog</description>
+	<lastBuildDate>Mon, 03 Jun 2019 12:14:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074601/cropped-pbg_corporation_owner_profile-32x32.png</url>
+	<title>DKIM &#8211; Hash Hackers</title>
+	<link>https://static.hashhackers.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">150230344</site>	<item>
+		<title>Knowing DKIM Records and Setting Them Up Correctly</title>
+		<link>https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/</link>
+					<comments>https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2019 12:11:25 +0000</pubDate>
+				<category><![CDATA[Domain Names]]></category>
+		<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[DKIM]]></category>
+		<category><![CDATA[DMARC]]></category>
+		<category><![CDATA[DNS Records]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=333</guid>
+
+					<description><![CDATA[<p>DomainKeys Identified Mail (DKIM) is an email authentication method designed to detect forged sender addresses in emails (email spoofing), a technique often used in phishing and email spam. What is DKIM? Its Email Authentication and the record proves that it was sent from the domain it is being shown. This uses Cryptographic Key to sign the [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/">Knowing DKIM Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><em>DomainKeys Identified Mail</em> (<em>DKIM</em>) is an email authentication method designed to detect forged sender addresses in emails (email spoofing), a technique often used in phishing and email spam.</p>
+<h2>What is DKIM?</h2>
+<p>Its Email Authentication and the record proves that it was sent from the domain it is being shown. This uses Cryptographic Key to sign the emails.</p>
+<h2>Why DKIM?</h2>
+<p>In simple words, DKIM is necessary so that your messages doesn&#8217;t end up in user spam box, like why Google, Facebook messages never goes into spam and unless we send them ourselves, as they are verified and authenticated that Google or Facebook sent them.</p>
+<h2>Setup DKIM Records</h2>
+<p>You cannot setup DKIM Record own your own without any help because DKIM is key based and the key must be present on Outgoing Mail Server to match to your domain. GSuite has Authentication Tab in GMAIL Settings for DKIM Signing.</p>
+<p>To setup a DKIM you must contact your Email Provider as many services like Godaddy Shared Hosting doesn&#8217;t even supports it. However it doesn&#8217;t means you messages will end up in spam because we can setup DMARC policy and which will help avoid spams.</p>
+<blockquote class="wp-embedded-content" data-secret="huLUZXnqZB"><p><a href="https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/">Knowing DMARC Records and Setting Them Up Correctly</a></p></blockquote>
+<p><iframe title="&#8220;Knowing DMARC Records and Setting Them Up Correctly&#8221; &#8212; Hash Hackers" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/embed/#?secret=huLUZXnqZB" data-secret="huLUZXnqZB" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>For every sub-domain or domain a separate DKIM key is required and also a seperate DKIM Record. When you setup emails with clients like Amazon SES and SendGrid they provide you these CNAME Records or DKIM Records to setup DKIM. CNAME records can be used to point a domain to another domain or sub-domain where your DKIM is entered.</p>
+<p>The record is set in TYPE: TXT</p>
+<p>Host is @ or sub-domain with prefix (it is provided by Sender Server to differentiate DKIM from different senders, Google uses google or custom prefix set by user)</p>
+<pre>Value: v=DKIM1; k=rsa; p=a_key_identifier</pre>
+<p>Here DKIM1 in v is DKIM Protocol and k is type of key encryption used and p is key value which is different for every domain and given by the Sender, also this is public key and is its private key is used at senders.</p>
+<p>Check for errors using <a href="https://toolbox.googleapps.com/apps/checkmx/" target="_blank" rel="noopener noreferrer">MXChecker from Google</a></p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/">Knowing DKIM Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">333</post-id>	</item>
+	</channel>
+</rss>
