@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>DNS Records &#8211; Hash Hackers</title>
+	<atom:link href="https://static.hashhackers.com/posts/tag/dns-records/feed/" rel="self" type="application/rss+xml" />
+	<link>https://static.hashhackers.com/</link>
+	<description>Unique Tutorials and Informational Blog</description>
+	<lastBuildDate>Mon, 03 Jun 2019 12:21:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074601/cropped-pbg_corporation_owner_profile-32x32.png</url>
+	<title>DNS Records &#8211; Hash Hackers</title>
+	<link>https://static.hashhackers.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">150230344</site>	<item>
+		<title>Knowing DKIM Records and Setting Them Up Correctly</title>
+		<link>https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/</link>
+					<comments>https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2019 12:11:25 +0000</pubDate>
+				<category><![CDATA[Domain Names]]></category>
+		<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[DKIM]]></category>
+		<category><![CDATA[DMARC]]></category>
+		<category><![CDATA[DNS Records]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=333</guid>
+
+					<description><![CDATA[<p>DomainKeys Identified Mail (DKIM) is an email authentication method designed to detect forged sender addresses in emails (email spoofing), a technique often used in phishing and email spam. What is DKIM? Its Email Authentication and the record proves that it was sent from the domain it is being shown. This uses Cryptographic Key to sign the [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/">Knowing DKIM Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><em>DomainKeys Identified Mail</em> (<em>DKIM</em>) is an email authentication method designed to detect forged sender addresses in emails (email spoofing), a technique often used in phishing and email spam.</p>
+<h2>What is DKIM?</h2>
+<p>Its Email Authentication and the record proves that it was sent from the domain it is being shown. This uses Cryptographic Key to sign the emails.</p>
+<h2>Why DKIM?</h2>
+<p>In simple words, DKIM is necessary so that your messages doesn&#8217;t end up in user spam box, like why Google, Facebook messages never goes into spam and unless we send them ourselves, as they are verified and authenticated that Google or Facebook sent them.</p>
+<h2>Setup DKIM Records</h2>
+<p>You cannot setup DKIM Record own your own without any help because DKIM is key based and the key must be present on Outgoing Mail Server to match to your domain. GSuite has Authentication Tab in GMAIL Settings for DKIM Signing.</p>
+<p>To setup a DKIM you must contact your Email Provider as many services like Godaddy Shared Hosting doesn&#8217;t even supports it. However it doesn&#8217;t means you messages will end up in spam because we can setup DMARC policy and which will help avoid spams.</p>
+<blockquote class="wp-embedded-content" data-secret="huLUZXnqZB"><p><a href="https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/">Knowing DMARC Records and Setting Them Up Correctly</a></p></blockquote>
+<p><iframe title="&#8220;Knowing DMARC Records and Setting Them Up Correctly&#8221; &#8212; Hash Hackers" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/embed/#?secret=huLUZXnqZB" data-secret="huLUZXnqZB" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>For every sub-domain or domain a separate DKIM key is required and also a seperate DKIM Record. When you setup emails with clients like Amazon SES and SendGrid they provide you these CNAME Records or DKIM Records to setup DKIM. CNAME records can be used to point a domain to another domain or sub-domain where your DKIM is entered.</p>
+<p>The record is set in TYPE: TXT</p>
+<p>Host is @ or sub-domain with prefix (it is provided by Sender Server to differentiate DKIM from different senders, Google uses google or custom prefix set by user)</p>
+<pre>Value: v=DKIM1; k=rsa; p=a_key_identifier</pre>
+<p>Here DKIM1 in v is DKIM Protocol and k is type of key encryption used and p is key value which is different for every domain and given by the Sender, also this is public key and is its private key is used at senders.</p>
+<p>Check for errors using <a href="https://toolbox.googleapps.com/apps/checkmx/" target="_blank" rel="noopener noreferrer">MXChecker from Google</a></p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/">Knowing DKIM Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">333</post-id>	</item>
+		<item>
+		<title>Knowing DMARC Records and Setting Them Up Correctly</title>
+		<link>https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/</link>
+					<comments>https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2019 11:57:31 +0000</pubDate>
+				<category><![CDATA[Domain Names]]></category>
+		<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[DMARC]]></category>
+		<category><![CDATA[DNS Records]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=328</guid>
+
+					<description><![CDATA[<p>What is DMARC? DMARC, which stands for “Domain-based Message Authentication, Reporting &#38; Conformance”, is an email authentication, policy, and reporting protocol. It builds on the widely deployed SPF and DKIM protocols, adding linkage to the author (“From:”) domain name, published policies for recipient handling of authentication failures, and reporting from receivers to senders, to improve and monitor protection of the [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/">Knowing DMARC Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2>What is DMARC?</h2>
+<p>DMARC, which stands for “Domain-based Message Authentication, Reporting &amp; Conformance”, is an email authentication, policy, and reporting protocol. It builds on the widely deployed <a href="/posts/knowing-spf-records-and-setting-them-up-correctly/" target="_blank" rel="noopener noreferrer">SPF</a> and DKIM protocols, adding linkage to the author (“From:”) domain name, published policies for recipient handling of authentication failures, and reporting from receivers to senders, to improve and monitor protection of the domain from fraudulent email.</p>
+<blockquote class="wp-embedded-content" data-secret="1lQGFCpRuU"><p><a href="https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/">Knowing SPF Records and Setting Them Up Correctly</a></p></blockquote>
+<p><iframe title="&#8220;Knowing SPF Records and Setting Them Up Correctly&#8221; &#8212; Hash Hackers" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/embed/#?secret=1lQGFCpRuU" data-secret="1lQGFCpRuU" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<h2>Before you start</h2>
+<p>Before you set up DMARC, we recommend you set up <a href="/posts/knowing-spf-records-and-setting-them-up-correctly/">Sender Policy Framework (SPF)</a> and <a href="/posts/knowing-dkim-records-and-setting-them-up-correctly/">Domain Keys Identified Mail</a> (DKIM). DMARC uses SPF and DKIM to verify that messages are authentic. Messages that do not pass SPF or DKIM trigger your DMARC policy.</p>
+<h2>DMARC with third-party email providers</h2>
+<p>For DMARC to effectively manage suspicious messages, messages should be sent from your own domain. Messages sent from third-party email providers for your organization can appear invalid and be rejected, depending on the DMARC policy.</p>
+<p>To prevent messages from third-party email providers from being marked invalid:</p>
+<ul>
+<li>Share your DKIM key with the mail provider so they can add the key to outgoing messages.</li>
+<li>Ask the mail provider to send messages through your network.</li>
+</ul>
+<h2>Setup a DMARC Record in DNS</h2>
+<p>For this i assume you already have <a href="/posts/knowing-spf-records-and-setting-them-up-correctly/">SPF</a> and <a href="/posts/knowing-dkim-records-and-setting-them-up-correctly/">DKIM</a> Records. You can add DMARC Record and setup it in 3 ways.</p>
+<ul class="spaced-list">
+<li>Replace the example domain in these steps with your domain.</li>
+<li>Replace the example values with values for your own DMARC policy.</li>
+</ul>
+<p>Add a DNS record at <strong>_dmarc</strong></p>
+<p><strong>TXT record name: </strong>In the first field, under DNS Host name, enter:</p>
+<p><code>_dmarc.example.com</code></p>
+<p><strong>TXT record value:</strong> In the second field, enter the values that define your DMARC policy, for example:</p>
+<p><code>v=DMARC1; rua=mailto:dmarc-reports@example.com; p=quarantine; pct=90; sp=none</code></p>
+<p>Here, v is for DMARC Protocol and is required, rua is to send DMARC Reports to your email address and is optional, p is how messages are handled and is required, pct is what Sets the percent of suspicious messages that the DMARC policy applies to, Suspicious messages are messages that fail the DMARC check and this is optional, sp is to set policy for sub domains if there is no different settings for them and its values can be same as values of p.</p>
+<h4>DMARC TXT record values (Source: <a href="https://support.google.com/a/answer/2466563" target="_blank" rel="noopener noreferrer">Google</a>)</h4>
+<p><strong>Note: </strong>Gmail does not support the DMARC <em>ruf</em> tag, used to send failure (forensic) reports.</p>
+<table class="nice-table" summary="This table displays common DMARC tags used for message disposition">
+<tbody>
+<tr>
+<th>Tag Name</th>
+<th>Required</th>
+<th>Description and values</th>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>v</strong></p>
+</td>
+<td>Required</td>
+<td>Protocol version. Must be <strong>DMARC1</strong>.</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>p</strong></p>
+</td>
+<td>Required</td>
+<td>Defines how your domain handles suspicious messages:</p>
+<ul>
+<li><strong>none</strong>: Take no action on the message. Log suspicious messages in the daily report.</li>
+<li><strong>quarantine:</strong> Mark the messages as spam and move to recipient&#8217;s Gmail spam folder. Recipients can <a href="https://support.google.com/mail/answer/1366858" rel="noopener">use Gmail to review their spam messages</a>.</li>
+<li><strong>reject</strong>:<strong> </strong>Tell receiving servers to reject the message. Whent his happens, the receiving server should send a bounce to the sending server.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>pct</strong></p>
+</td>
+<td>Optional</td>
+<td>Sets the percent of suspicious messages that the DMARC policy applies to. Suspicious messages are messages that fail the DMARC check.</p>
+<p>Must be a whole number between <strong>1</strong> and <strong>100</strong>. The default is <strong>100</strong>.</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>rua</strong></p>
+</td>
+<td>Optional</td>
+<td>Email address to receive reports about DMARC activity for your domain. Use your own email address or create a new email address to receive reports. To send the report to more than one email address, separate emails with a comma.</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>sp</strong></p>
+</td>
+<td>Optional</td>
+<td>Sets the policy for messages from subdomains of your main domain. Use this option if you want to use a different DMARC policy for your subdomains.</p>
+<ul>
+<li><strong>none</strong>: Take no action on the message. Log suspicious messages in the daily report.</li>
+<li><strong>quarantine:</strong> Mark the messages as spam and hold it for more processing.</li>
+<li><strong>reject</strong>:<strong> </strong>Instruct receiving servers to reject the message.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>adkim</strong></td>
+<td>Optional</td>
+<td>Sets the Alignment mode for DKIM, which defines how exactly message information must match DKIM signatures.</p>
+<ul>
+<li><strong>r:</strong> (Default) Relaxed. Allow partial matches, for example subdomains within a domain.</li>
+<li><strong>s: </strong>Strict. Require an exact match.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>aspf</strong></p>
+</td>
+<td>Optional</td>
+<td>Sets the Alignment mode for SPF (ASPF), which defines how exactly message information must match SPF signatures.</p>
+<ul>
+<li><strong>r:</strong> (Default) Relaxed. Allow partial matches, for example subdomains within a domain.</li>
+<li><strong>s: </strong>Strict. Require an exact match.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>Godaddy Shared Hosting doesn&#8217;t supports DKIM Signing from Customer Domains as they disabled this is cPanel. Google Suite has its own method to setup DKIM Signing while SendGrid, Amazon SES and othersprovides these in their console.</p>
+<p>Check for errors using <a href="https://toolbox.googleapps.com/apps/checkmx/" target="_blank" rel="noopener noreferrer">MXChecker from Google</a></p>
+<p>Recommended Free Service to Setup DMARC Record is <a href="https://dmarc.postmarkapp.com/" target="_blank" rel="noopener noreferrer">https://dmarc.postmarkapp.com</a></p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/">Knowing DMARC Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/knowing-dmarc-records-and-setting-them-up-correctly/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">328</post-id>	</item>
+	</channel>
+</rss>
