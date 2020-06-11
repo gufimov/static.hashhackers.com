@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Spam Free &#8211; Hash Hackers</title>
+	<atom:link href="https://static.hashhackers.com/posts/tag/spam-free/feed/" rel="self" type="application/rss+xml" />
+	<link>https://static.hashhackers.com/</link>
+	<description>Unique Tutorials and Informational Blog</description>
+	<lastBuildDate>Mon, 03 Jun 2019 12:12:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074601/cropped-pbg_corporation_owner_profile-32x32.png</url>
+	<title>Spam Free &#8211; Hash Hackers</title>
+	<link>https://static.hashhackers.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">150230344</site>	<item>
+		<title>Knowing SPF Records and Setting Them Up Correctly</title>
+		<link>https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/</link>
+					<comments>https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Mon, 03 Jun 2019 11:34:49 +0000</pubDate>
+				<category><![CDATA[Domain Names]]></category>
+		<category><![CDATA[Web Hosting]]></category>
+		<category><![CDATA[DNS Management]]></category>
+		<category><![CDATA[Spam Free]]></category>
+		<category><![CDATA[SPF Records]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=293</guid>
+
+					<description><![CDATA[<p>A Sender Policy Framework (SPF) record is a type of Domain Name Service (DNS) TXT record that identifies which mail servers are permitted to send email on behalf of your domain. The purpose of an SPF record is to detect and prevent spammers from sending messages with forged From addresses on your domain. Why SPF Records? [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/">Knowing SPF Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>A Sender Policy Framework (<b>SPF</b>) record is a type of Domain Name Service (DNS) TXT record that identifies which mail servers are permitted to send email on behalf of your domain. The purpose of an <b>SPF</b> record is to detect and prevent spammers from sending messages with forged From addresses on your domain.</p>
+<h2>Why SPF Records?</h2>
+<p>SPF Records are value for sender&#8217;s domain which are allowed to send email on behalf of your domain name. These value differ from operator to operator. If you are using Google Email then your SPF Record looks like <a href="https://support.google.com/a/answer/33786?hl=en" target="_blank" rel="noopener noreferrer">v=spf1 include:_spf.google.com ~all</a> and for Amazon SES it looks like <a href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/spf.html" target="_blank" rel="noopener noreferrer">v=spf1 include:amazonses.com ~all</a> and so on.</p>
+<h2>How to Find Correct SPF Records?</h2>
+<p>SPF Records for popular services like sendgrid and amazon ses remains same, you can find by searching them on google. terms will be SPF RECORDS SENDGRID and SPF RECORDS AMAZON SES.</p>
+<h2>Way to Create Single SPF Record</h2>
+<pre>Host: @ or Sub-domain</pre>
+<pre>Type: TXT Record</pre>
+<pre>TTL: 3200 or Default</pre>
+<pre>Value: v=spf1 include:amazonses.com ~all</pre>
+<h2>Way to Create SPF Record for Multiple Senders</h2>
+<pre>Host: @ or Sub-domain</pre>
+<pre>Type: TXT Record</pre>
+<pre>TTL: 3200 or Default</pre>
+<pre>Value: v=spf1 include:amazonses.com include:_spf.google.com ~all</pre>
+<blockquote class="wp-embedded-content" data-secret="8iOJyxXQKx"><p><a href="https://static.hashhackers.com/posts/all-dns-records-and-settings-for-google-suite-domain/">All DNS Records and Settings for Google Suite Domain</a></p></blockquote>
+<p><iframe title="&#8220;All DNS Records and Settings for Google Suite Domain&#8221; &#8212; Hash Hackers" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="https://static.hashhackers.com/posts/all-dns-records-and-settings-for-google-suite-domain/embed/#?secret=8iOJyxXQKx" data-secret="8iOJyxXQKx" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<h2>Checking Records for Errors</h2>
+<p>What&#8217;s more popular place to check directly at Google. <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><a href="https://toolbox.googleapps.com/apps/checkmx/" target="_blank" rel="noopener noreferrer">MXChecker from Google</a></p>
+<p>For a Value v=spf1 include:_spf.google.com include:sendgrid.net include:amazonses.com ~all here is a screenshot of Checked MX Records.</p>
+<p>Note: Don&#8217;t add too many senders in SPF Records, this causing High Number of DNS Lookup&#8217;s. Add only which are required.</p>
+<p><img data-attachment-id="324" data-permalink="https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/spf-result-hashhackers-com/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com.png" data-orig-size="589,474" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="spf-result-hashhackers-com" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com-300x241.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com.png" class="aligncenter size-full wp-image-324" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com.png" alt="" width="589" height="474" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com.png 589w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com-300x241.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25073906/spf-result-hashhackers-com-522x420.png 522w" sizes="(max-width: 589px) 100vw, 589px" /></p>
+<p>Next is DKIM Records</p>
+<blockquote class="wp-embedded-content" data-secret="jQbEcKH9hq"><p><a href="https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/">Knowing DKIM Records and Setting Them Up Correctly</a></p></blockquote>
+<p><iframe title="&#8220;Knowing DKIM Records and Setting Them Up Correctly&#8221; &#8212; Hash Hackers" class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; clip: rect(1px, 1px, 1px, 1px);" src="https://static.hashhackers.com/posts/knowing-dkim-records-and-setting-them-up-correctly/embed/#?secret=jQbEcKH9hq" data-secret="jQbEcKH9hq" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/">Knowing SPF Records and Setting Them Up Correctly</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/knowing-spf-records-and-setting-them-up-correctly/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">293</post-id>	</item>
+	</channel>
+</rss>
