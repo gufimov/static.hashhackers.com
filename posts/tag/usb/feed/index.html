@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>USB &#8211; Hash Hackers</title>
+	<atom:link href="https://static.hashhackers.com/posts/tag/usb/feed/" rel="self" type="application/rss+xml" />
+	<link>https://static.hashhackers.com/</link>
+	<description>Unique Tutorials and Informational Blog</description>
+	<lastBuildDate>Sat, 01 Jun 2019 11:54:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074601/cropped-pbg_corporation_owner_profile-32x32.png</url>
+	<title>USB &#8211; Hash Hackers</title>
+	<link>https://static.hashhackers.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">150230344</site>	<item>
+		<title>Install Windows 10 From USB Drive</title>
+		<link>https://static.hashhackers.com/posts/install-windows-10-usb-drive/</link>
+					<comments>https://static.hashhackers.com/posts/install-windows-10-usb-drive/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Sat, 01 Jun 2019 11:26:43 +0000</pubDate>
+				<category><![CDATA[Windows Tools]]></category>
+		<category><![CDATA[Windows Tutorials]]></category>
+		<category><![CDATA[USB]]></category>
+		<category><![CDATA[Windows 10]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=75</guid>
+
+					<description><![CDATA[<p>This is a complete guide to install Windows 10 from a bootable USB. One of the main advantages of installing a version of Windows operating system from a bootable USB is speed, especially when compared to the traditional way of installing Windows from a DVD. Even though there are ample amount of free utilities out [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/install-windows-10-usb-drive/">Install Windows 10 From USB Drive</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>This is a complete guide to install Windows 10 from a bootable USB. One of the main advantages of installing a version of Windows operating system from a bootable USB is speed, especially when compared to the traditional way of installing Windows from a DVD.</p>
+<p>Even though there are ample amount of free utilities out there to help you create a bootable USB of Windows 10 with a few mouse clicks, it’s possible to prepare the bootable USB without using third-party utilities. All you need to do is execute a bunch of commands in the Command Prompt to make your Windows 10 bootable USB.</p>
+<p>The other advantage of the Command Prompt is that it’s error free, meaning you will be able to create the bootable USB without encountering any errors when commands are entered properly.</p>
+<p>The method we use for creating a bootable Windows 10 is USB is the same as the method we use for previous versions of Windows operating system. In other words, the procedure is pretty much the same and should not take more than 10 minutes when done correctly.</p>
+<p>Here is how you can make bootable USB of Windows 10 from the Command Prompt using the Diskpart command.</p>
+<p>Things you will need:</p>
+<ul>
+<li>Windows 10 ISO or Windows 10 DVD</li>
+<li>A USB with 4GB+ size</li>
+<li>A working Windows 7/8/8.1 PC to create the bootable USB</li>
+</ul>
+<p><code>Important</code>: Before you proceed to prepare your Windows 10 bootable media, please check the version of Windows 7/8/8.1 on which you are going to make the bootable USB of Windows. This is because, you can’t prepare the bootable USB of 64-bit of Windows 10 on a PC running Windows 7, Windows 8, or Windows 8.1. In simple words, you can’t use 32-bit installation of Windows to prepare the bootable USB of 64-bit Windows.</p>
+<p>So, please read the following line carefully:</p>
+<ul>
+<li>It’s not possible to create 64-bit version of Windows 10 bootable USB on a PC running 32-bit version of Windows.</li>
+<li>You need x64 version of Windows 7/8/8.1 to prepare bootable USB of Windows 10 x64.</li>
+<li>You can create x86 version of Windows 10 bootable USB on computer running x86 version of Windows 7/8/8.1</li>
+</ul>
+<h3 id="install-windows-10-from-usb-drive">Install Windows 10 from USB drive</h3>
+<ul>
+<li>Step 1: Connect your USB drive to Windows 7 or Windows 8 PC and move all important data to a safe location as the drive will be erased during the process. We also suggest you un-plug any other external hard drive connected to avoid selecting a wrong drive during the drive selection.</li>
+<li>Step 2: Open elevated Command Prompt. To do so, you can type CMD in Start menu or Start screen and then simultaneously press Ctrl + Shift + Enter keys. Windows 7 users can also navigate to Start menu, All Programs, Accessories, right-click on Command Prompt and then click Run as administrator option. Click Yes button when you see the UAC prompt to continue.</li>
+</ul>
+<p><img data-attachment-id="77" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-flash-drive-step1/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1.png" data-orig-size="452,722" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-flash-drive-step1" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1-188x300.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1.png" class="aligncenter size-full wp-image-77" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1.png" alt="" width="452" height="722" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1.png 452w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1-188x300.png 188w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075054/install-windows-10-from-usb-flash-drive-step1-263x420.png 263w" sizes="(max-width: 452px) 100vw, 452px" /></p>
+<p><img data-attachment-id="78" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-drive-step1_thumb/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb.jpg" data-orig-size="349,438" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-drive-step1_thumb" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb-239x300.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb.jpg" class="aligncenter size-full wp-image-78" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb.jpg" alt="" width="349" height="438" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb.jpg 349w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb-239x300.jpg 239w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075046/install-windows-10-from-usb-drive-step1_thumb-335x420.jpg 335w" sizes="(max-width: 349px) 100vw, 349px" /></p>
+<p>Note that it’s very <code>important to open Command Prompt as administrator</code> to avoid errors. Be sure to open the elevated prompt. Most users ignore this step and end up errors while preparing the bootable USB. When you’re launching Command Prompt, you’ll see the UAC prompt where you need to click the Yes button.</p>
+<ul>
+<li>Step 3: In the elevated Command Prompt, type <code>DISKPART</code> and then hit enter key.</li>
+</ul>
+<p><img data-attachment-id="79" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/guide-to-install-windows-10-from-usb-drive/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075041/guide-to-install-windows-10-from-usb-drive.jpg" data-orig-size="529,147" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="guide-to-install-windows-10-from-usb-drive" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075041/guide-to-install-windows-10-from-usb-drive-300x83.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075041/guide-to-install-windows-10-from-usb-drive.jpg" class="aligncenter size-full wp-image-79" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075041/guide-to-install-windows-10-from-usb-drive.jpg" alt="" width="529" height="147" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075041/guide-to-install-windows-10-from-usb-drive.jpg 529w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075041/guide-to-install-windows-10-from-usb-drive-300x83.jpg 300w" sizes="(max-width: 529px) 100vw, 529px" /></p>
+<p>Now, type <code>LIST DISK</code> command and press the Enter key again to see all connected disks. This is the important step is you should note the disk number assigned for your internal hard disk and your connected USB drive.</p>
+<p><img data-attachment-id="80" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-drive-step2_thumb/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075035/install-windows-10-from-usb-drive-step2_thumb.jpg" data-orig-size="525,284" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-drive-step2_thumb" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075035/install-windows-10-from-usb-drive-step2_thumb-300x162.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075035/install-windows-10-from-usb-drive-step2_thumb.jpg" class="aligncenter size-full wp-image-80" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075035/install-windows-10-from-usb-drive-step2_thumb.jpg" alt="" width="525" height="284" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075035/install-windows-10-from-usb-drive-step2_thumb.jpg 525w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075035/install-windows-10-from-usb-drive-step2_thumb-300x162.jpg 300w" sizes="(max-width: 525px) 100vw, 525px" /></p>
+<p>If you have only one internal HDD or SSD, 1 will be the disk number of your USB drive. As you can see in the above picture, the disk number for my USB drive is 1.</p>
+<ul>
+<li>Step 4: Type all the following commands one after another and press enter key after each command.</li>
+</ul>
+<p><code>SELECT DISK 1</code></p>
+<p><code>(IMP: In the above command, replace”1” with the disk number of your USB drive obtained in the previous step. Entering a wrong disk number will cause data loss. So please double check the disk number before entering the disk number.)</code></p>
+<p>(press enter key)</p>
+<p><code>CLEAN</code></p>
+<p>(press enter key)</p>
+<p><code>CREATE PARTITION PRIMARY</code></p>
+<p>(press enter key)</p>
+<p><code>SELECT PARTITION 1</code></p>
+<p>(press enter key)</p>
+<p><code>ACTIVE</code></p>
+<p>(press enter key)</p>
+<p><code>FORMAT FS=NTFS QUICK</code></p>
+<p><code>IMP: If your PC supports UEFI, please format the drive with FORMAT FS=FAT32 Quick command.</code></p>
+<p>(press enter key)</p>
+<p><code>ASSIGN</code></p>
+<p>(press enter key)</p>
+<p><code>EXIT</code></p>
+<p>(press enter key)</p>
+<p><img data-attachment-id="81" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-drive-step3_thumb/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb.jpg" data-orig-size="542,480" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-drive-step3_thumb" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb-300x266.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb.jpg" class="aligncenter size-full wp-image-81" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb.jpg" alt="" width="542" height="480" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb.jpg 542w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb-300x266.jpg 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075024/install-windows-10-from-usb-drive-step3_thumb-474x420.jpg 474w" sizes="(max-width: 542px) 100vw, 542px" /></p>
+<p>Since we aren’t finished yet, please don’t close the Command Prompt. Simply minimize it to the taskbar and then follow the instructions in the next step.</p>
+<ul>
+<li>Step 5: If you’re on Windows <sup>8</sup>⁄<sub>8</sub>.1 and have the ISO image of Windows 10, right-click on the ISO image and then click Mount option to mount the ISO file. After mounting, open This PC (Computer) and note the drive letter of it.</li>
+</ul>
+<p><img data-attachment-id="82" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-drive-step4_thumb/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075019/install-windows-10-from-usb-drive-step4_thumb.jpg" data-orig-size="382,162" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-drive-step4_thumb" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075019/install-windows-10-from-usb-drive-step4_thumb-300x127.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075019/install-windows-10-from-usb-drive-step4_thumb.jpg" class="aligncenter size-full wp-image-82" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075019/install-windows-10-from-usb-drive-step4_thumb.jpg" alt="" width="382" height="162" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075019/install-windows-10-from-usb-drive-step4_thumb.jpg 382w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075019/install-windows-10-from-usb-drive-step4_thumb-300x127.jpg 300w" sizes="(max-width: 382px) 100vw, 382px" /></p>
+<p>And if you’re on Windows 7, use an image mounting software such as Virtual CloneDrive and note the drive letter after mounting the ISO. If you’re not sure how to go with it, please follow our how to <a href="/posts/mount-iso-file-windows-7/" target="_blank" rel="noopener noreferrer">mount an ISO file in Windows 7</a> guide for step-by-step instructions to mount your Windows 10 ISO and get the drive letter.</p>
+<p><img data-attachment-id="83" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-drive-step5_thumb/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075015/install-windows-10-from-usb-drive-step5_thumb.jpg" data-orig-size="394,181" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-drive-step5_thumb" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075015/install-windows-10-from-usb-drive-step5_thumb-300x138.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075015/install-windows-10-from-usb-drive-step5_thumb.jpg" class="aligncenter size-full wp-image-83" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075015/install-windows-10-from-usb-drive-step5_thumb.jpg" alt="" width="394" height="181" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075015/install-windows-10-from-usb-drive-step5_thumb.jpg 394w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075015/install-windows-10-from-usb-drive-step5_thumb-300x138.jpg 300w" sizes="(max-width: 394px) 100vw, 394px" /></p>
+<p>In this guide, we’re assuming “J” as the drive letter of the virtual drive where you have mounted Windows 10 ISO.</p>
+<p>And if you have the DVD of Windows 10, simply insert the DVD into the optical drive and note the drive letter of your optical drive. You can then use this drive letter whenever needed.</p>
+<ul>
+<li>Step 6: Maximize the Command Prompt that you had minimized in Step 4 and execute the following commands one after another.</li>
+</ul>
+<p><code>J: CD BOOT</code></p>
+<p>(Hit enter key)</p>
+<p>Here “J” is the drive letter of your virtual drive containing Windows 10 ISO or DVD drive containing installation files.</p>
+<p><code>CD BOOT</code> and press enter.</p>
+<p>Step 7: Finally, type the following command:</p>
+<p><code>BOOTSECT.EXE /NT60 K:</code></p>
+<p>In the above command, replace “K” with the drive letter of your USB drive that you’re making bootable.</p>
+<p><img data-attachment-id="84" data-permalink="https://static.hashhackers.com/posts/install-windows-10-usb-drive/install-windows-10-from-usb-drive-step6_thumb/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075009/install-windows-10-from-usb-drive-step6_thumb.jpg" data-orig-size="548,173" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="install-windows-10-from-usb-drive-step6_thumb" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075009/install-windows-10-from-usb-drive-step6_thumb-300x95.jpg" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075009/install-windows-10-from-usb-drive-step6_thumb.jpg" class="aligncenter size-full wp-image-84" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075009/install-windows-10-from-usb-drive-step6_thumb.jpg" alt="" width="548" height="173" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075009/install-windows-10-from-usb-drive-step6_thumb.jpg 548w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25075009/install-windows-10-from-usb-drive-step6_thumb-300x95.jpg 300w" sizes="(max-width: 548px) 100vw, 548px" /></p>
+<p>Once you see “Bootcode was successfully updated on all targeted volumes” message, simply close the Command Prompt. We are almost done!</p>
+<ul>
+<li>Step 8: Finally, copy all the contents of your Windows 10 ISO image to the root of the USB drive. You can either extract ISO file contents or copy files from the mounted drive. The same procedure applies even if you have the DVD of Windows 10. You just need to copy all files to the root of the USB drive.</li>
+<li>Step 9: Now that you have your bootable USB of Windows 10, turn on the PC on which you want to install Windows 10, enable booting from USB, set the boot priority to boot from USB, and then restart your PC again to begin installing Windows 10. Follow the very simple on-screen instructions to complete the installation.</li>
+</ul>
+<p>If you come across any issues while preparing the bootable USB or installing Windows 10, do let us know by leaving a comment. Before leaving your comment, please double check that you have used an elevated prompt to prepare your bootable USB.</p>
+<p>Enjoy the newest version of Windows operating system!</p>
+<p>An Alternative Method is using <a href="https://rufus.ie/" target="_blank" rel="noopener noreferrer">Rufus</a>.</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/install-windows-10-usb-drive/">Install Windows 10 From USB Drive</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/install-windows-10-usb-drive/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">75</post-id>	</item>
+	</channel>
+</rss>
