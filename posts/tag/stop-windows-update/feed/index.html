@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Stop Windows Update &#8211; Hash Hackers</title>
+	<atom:link href="https://static.hashhackers.com/posts/tag/stop-windows-update/feed/" rel="self" type="application/rss+xml" />
+	<link>https://static.hashhackers.com/</link>
+	<description>Unique Tutorials and Informational Blog</description>
+	<lastBuildDate>Sun, 02 Jun 2019 13:26:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+
+<image>
+	<url>https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074601/cropped-pbg_corporation_owner_profile-32x32.png</url>
+	<title>Stop Windows Update &#8211; Hash Hackers</title>
+	<link>https://static.hashhackers.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">150230344</site>	<item>
+		<title>Easily Stop Windows 10 Updates for your Desired Time Period</title>
+		<link>https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/</link>
+					<comments>https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/#respond</comments>
+		
+		<dc:creator><![CDATA[Parveen Bhadoo]]></dc:creator>
+		<pubDate>Sun, 02 Jun 2019 13:26:24 +0000</pubDate>
+				<category><![CDATA[Windows Tutorials]]></category>
+		<category><![CDATA[Stop Windows Update]]></category>
+		<category><![CDATA[Windows 10]]></category>
+		<category><![CDATA[Windows 10 Updates]]></category>
+		<guid isPermaLink="false">https://static.hashhackers.com/?p=244</guid>
+
+					<description><![CDATA[<p>Windows 10 is forcing people to update almost every few days and a lot of users are facing problems with it. We are here with a simple solution stop updates on Windows 10. Note: This post is straight to the point and doesn’t waste any of your time. Read carefully and proceed with your editing [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/">Easily Stop Windows 10 Updates for your Desired Time Period</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><a href="/posts/download-windows-10-official-iso-files/">Windows 10</a> is forcing people to update almost every few days and a lot of users are facing problems with it. We are here with a simple solution stop updates on Windows 10.</p>
+<p>Note: This post is straight to the point and doesn’t waste any of your time. Read carefully and proceed with your editing of Registry Files, We are not responsible for any loss or damage caused by you after reading this article if you have no idea what you’re doing. This method is tested on 03 Oct 2018 on Windows 10 Pro v1709 Build 16299.15</p>
+<h2 id="how-to-stop-updates-in-any-windows-10-computer-for-35-days-official-method">How to stop updates in any <a href="/posts/activate-windows/">Windows 10</a> Computer for 35 Days (Official Method)</h2>
+<ol>
+<li>Open <strong>Settings</strong></li>
+<li>Open <strong>Updates and Security</strong>.</li>
+<li>At the bottom select <strong>Advanced Options</strong>.</li>
+<li>There is a Text as <strong>Pause Updates</strong>.</li>
+<li>Toggle the Below Button to pause updates for up to 35 Days.</li>
+<li>When 35 days are over you will have to update your Windows to pause it again.</li>
+<li>It’s done, easy as that.</li>
+</ol>
+<h2 id="pause-updates-for-more-than-35-days">Pause Updates for more than 35 Days.</h2>
+<ul>
+<li>Note: This method is <strong>not</strong> a <strong>hack</strong> or <strong>illegal,</strong> this method is used to changes the value <em>35 days</em> to desired number of days.</li>
+<li>Open <strong>Run Command</strong> or use <strong>WIN + R</strong> to open.</li>
+<li>type <em>regedit</em> and hit enter.</li>
+<li>Select YES if required.</li>
+<li>You can either navigate or got to the following directory.</li>
+<li>HKEY_LOCAL_MACHINE</li>
+<li>SOFTWARE</li>
+<li>Microsoft</li>
+<li>WindowsUpdate</li>
+<li>UX</li>
+<li>Settings
+<pre><code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
+</code></pre>
+</li>
+<li>Or copy above code and paste in the address bar of your Registry Editor.</li>
+<li>When you click on <strong>Settings</strong> in the above path, you’ll see a lot of options.</li>
+<li>Try to find <strong>FlightSettingsMaxPauseDays</strong>.</li>
+<li>You may or mayn’t see it.</li>
+<li>If you cannot find it just right click on the white space and select <strong>NEW</strong> &gt; <strong>DWORD (32 bit) Value</strong>.</li>
+<li>In the value name put below words.
+<pre><code>FlightSettingsMaxPauseDays</code></pre>
+</li>
+</ul>
+<p><img data-attachment-id="246" data-permalink="https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/create-new-key/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074306/create-new-key.png" data-orig-size="329,170" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="create-new-key" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074306/create-new-key-300x155.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074306/create-new-key.png" class="aligncenter size-full wp-image-246" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074306/create-new-key.png" alt="" width="329" height="170" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074306/create-new-key.png 329w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074306/create-new-key-300x155.png 300w" sizes="(max-width: 329px) 100vw, 329px" /> <img data-attachment-id="247" data-permalink="https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/regedit-file/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file.png" data-orig-size="814,307" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="regedit-file" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file-300x113.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file.png" class="aligncenter size-full wp-image-247" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file.png" alt="" width="814" height="307" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file.png 814w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file-300x113.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file-768x290.png 768w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file-696x262.png 696w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074256/regedit-file-600x226.png 600w" sizes="(max-width: 814px) 100vw, 814px" /></p>
+<ul>
+<li>Now <strong>Right click</strong> on the above <strong>Entry</strong> and <strong>Click</strong> Modify.</li>
+<li>Select <strong>Decimal</strong> Option.</li>
+<li>In the <strong>Value Data</strong> Option Enter Number of Days for Pausing Updates.</li>
+<li>Save the File by clicking on OK.</li>
+<li>Now Follow Below to Pause Updates.</li>
+<li>Open <strong>Settings</strong></li>
+<li>Open <strong>Updates and Security</strong>.</li>
+<li>At the bottom select <strong>Advanced Options</strong>.</li>
+<li>There is a Text as <strong>Pause Updates</strong>.</li>
+<li>Toggle the Below Button to pause updates for up to desired number of Days.</li>
+<li>It’s done, easy as that.</li>
+</ul>
+<p><img data-attachment-id="248" data-permalink="https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/paused-updates/" data-orig-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates.png" data-orig-size="818,190" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="paused-updates" data-image-description="" data-medium-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates-300x70.png" data-large-file="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates.png" class="aligncenter size-full wp-image-248" src="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates.png" alt="" width="818" height="190" srcset="https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates.png 818w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates-300x70.png 300w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates-768x178.png 768w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates-696x162.png 696w, https://images.cdn.hashhackers.com/wp-content/uploads/2019/06/25074248/paused-updates-600x139.png 600w" sizes="(max-width: 818px) 100vw, 818px" /></p>
+<p>The post <a rel="nofollow" href="https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/">Easily Stop Windows 10 Updates for your Desired Time Period</a> appeared first on <a rel="nofollow" href="https://static.hashhackers.com/">Hash Hackers</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://static.hashhackers.com/posts/easily-stop-windows-10-updates-for-your-desired-time-period/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">244</post-id>	</item>
+	</channel>
+</rss>
